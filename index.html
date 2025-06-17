@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflective Uniforms for Port Specialists</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="logo">Your<span>Logo</span></div>
+                <h1>Reflective Uniforms for Port Professionals</h1>
+                <p class="subtitle">For B2B and B2C: High-quality apparel for dockers and crane operators</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-opt" id="openOptForm">Request Wholesale</button>
+                    <button class="btn btn-retail" id="openRetailCart">Buy Retail</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/hero-uniform.png" alt="Reflective uniform" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                We are a Singapore-based company delivering waterproof reflective uniforms for crane operators and technical staff in ports. We manufacture or source in China. Our B2B clients include Klaipeda Port, Gdansk Port, and Jebel Ali Port. We also serve individual customers across Europe, Dubai, and Egypt (Alexandria, Safaga, Ain Sokhna, Suez ports).
+            </p>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="advantages">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="advantages-list">
+                <div class="adv-card">
+                    <span>🦺</span>
+                    <p>Reflective & Waterproof Materials</p>
+                </div>
+                <div class="adv-card">
+                    <span>🔟</span>
+                    <p>Minimum 10 pcs (retail) / Custom wholesale terms</p>
+                </div>
+                <div class="adv-card">
+                    <span>📦</span>
+                    <p>Local warehouses in EU & UAE</p>
+                </div>
+                <div class="adv-card">
+                    <span>🚚</span>
+                    <p>Fast shipping via Amazon, Allegro, Amazon.ae, Noon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog">
+        <div class="container">
+            <h2>Product Catalog</h2>
+            <div class="product-list" id="productList">
+                <!-- Example Product -->
+                <div class="product-card">
+                    <img src="img/uniform1.jpg" alt="Reflective Jacket">
+                    <h3>Hi-Vis Waterproof Jacket</h3>
+                    <ul>
+                        <li>Material: 100% Polyester</li>
+                        <li>EN20471 Reflective Stripes</li>
+                        <li>Sizes: S–XXL</li>
+                    </ul>
+                    <div class="product-buttons">
+                        <button class="btn btn-retail" onclick="openRetailCart()">Buy Retail</button>
+                        <button class="btn btn-opt" onclick="openOptForm()">Request Wholesale</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/uniform2.jpg" alt="Reflective Trousers">
+                    <h3>Reflective Work Trousers</h3>
+                    <ul>
+                        <li>Waterproof, Reinforced Knees</li>
+                        <li>Bright Reflective Tape</li>
+                        <li>Sizes: M–XXXL</li>
+                    </ul>
+                    <div class="product-buttons">
+                        <button class="btn btn-retail" onclick="openRetailCart()">Buy Retail</button>
+                        <button class="btn btn-opt" onclick="openOptForm()">Request Wholesale</button>
+                    </div>
+                </div>
+                <!-- Add more product-card blocks as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof">
+        <div class="container">
+            <h2>Trusted by Ports Worldwide</h2>
+            <div class="ports-logos">
+                <img src="img/port-klaipeda.png" alt="Klaipeda Port">
+                <img src="img/port-gdansk.png" alt="Gdansk Port">
+                <img src="img/port-jebel-ali.png" alt="Jebel Ali Port">
+                <img src="img/port-alexandria.png" alt="Alexandria Port">
+                <img src="img/port-ain-sokhna.png" alt="Ain Sokhna Port">
+                <img src="img/port-suez.png" alt="Suez Port">
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <p>"Reliable supplier for our team uniforms. Fast and professional!"</p>
+                    <span>– Procurement Manager, Klaipeda Port</span>
+                </div>
+                <div class="review">
+                    <p>"Easy online order, delivery on time. Jacket quality is great!"</p>
+                    <span>– Individual customer, Dubai</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="hiw-steps">
+                <div class="hiw-step"><span>1</span>Send a request or choose from catalog</div>
+                <div class="hiw-step"><span>2</span>We manufacture or source your order</div>
+                <div class="hiw-step"><span>3</span>Payment: Invoice (B2B) or card (B2C)</div>
+                <div class="hiw-step"><span>4</span>Shipping locally & internationally</div>
+                <div class="hiw-step"><span>5</span>Receive and use uniforms at your port</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forms & CTA -->
+    <section class="cta-forms">
+        <div class="container">
+            <div class="cta-block">
+                <h2>Wholesale Request</h2>
+                <form action="mailto:your@email.com" method="post" enctype="text/plain" class="form-opt">
+                    <input type="text" name="Company" placeholder="Company Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <input type="text" name="Contact" placeholder="Contact Person" required>
+                    <input type="text" name="Volume" placeholder="Order Volume (pcs)" required>
+                    <textarea name="Message" placeholder="Additional Message"></textarea>
+                    <button type="submit" class="btn btn-opt">Send Request</button>
+                </form>
+            </div>
+            <div class="cta-block">
+                <h2>Retail Purchase</h2>
+                <a href="#catalog" class="btn btn-retail">Browse & Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <b>Contacts:</b> <br>
+                Singapore, Tel: +65-xxx-xxxx<br>
+                Email: info@yourcompany.com
+            </div>
+            <div class="footer-links">
+                <a href="https://amazon.com/" target="_blank">Amazon</a> |
+                <a href="https://allegro.pl/" target="_blank">Allegro</a> |
+                <a href="https://amazon.ae/" target="_blank">Amazon.ae</a> |
+                <a href="https://www.noon.com/" target="_blank">Noon</a>
+            </div>
+            <div>
+                &copy; 2025 Your Company. All rights reserved.<br>
+                <span class="footer-legal">Business Reg. No. SG-XXXXXX</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
